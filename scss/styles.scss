@@ -1,0 +1,66 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";
+
+// Sections
+@import "./sections/masthead.scss";
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .profile {
+      max-width: 100% !important;
+    }
+  
+    .resumeBtnMob {
+      width: 50%;
+      padding-left: .75rem !important;
+      position: relative;
+      float: left;
+    }
+  
+    .linkedInBtn {
+      width: 48%;
+      position: relative;
+      float: right;
+      padding-left: 1.8rem !important;
+    }
+
+    .ct-body{
+        font-size: 1.1rem;
+        width:100%;
+    }
+
+    .talk {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .resumeBtnMob{
+        padding-left: 1.4rem !important;
+      }
+
+      .linkedInBtn{
+        padding-left: 2.4rem !important;
+      }
+
+    }
